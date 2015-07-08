@@ -12,6 +12,10 @@ body{
 .storeName{
   display:inline-block;
 }
+.allProducts{
+  width: 90%;
+  margin-left: 5%;
+}
 .navLinks{
   display:inline-block;
   position:relative;
