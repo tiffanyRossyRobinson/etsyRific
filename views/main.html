@@ -1,7 +1,7 @@
 <div class="allProducts">
-  <h3>Dare to be Etsy-fied...</h3>
+  <h3>Dare to be Etsy-fied...</h3> <input type="text" ng-model="search.title" name="name" placeholder="Filter By Title">
   <button type="button" ng-click ="sortData('title', listings)" class="sortTitle">Sort By Title</button> <button type="button" ng-click ="sortData('price', listings)" class="sortPrice">Sort By Price</button>
-  <div class="product" ng-repeat="listing in listings" data-id={{listing.id}}>
+  <div class="product" ng-repeat="listing in listings | filter: search:strict" data-id={{listing.id}}>
     <div class= "broughtUpImage"><img src="{{listing.image}}" width= "80"/></div>
     <div class= "broughtUpDetails">
         <a href="#/detail/{{listing.id}}">{{listing.title}}</a>
