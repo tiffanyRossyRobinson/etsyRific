@@ -9,6 +9,11 @@ body{
   border-radius: 20px;
 }
 
+.allProducts{
+  width: 80%;
+  margin-left: 10%;
+}
+
 .storeName{
   display:inline-block;
 }
