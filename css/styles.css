@@ -9,13 +9,12 @@ body{
   border-radius: 20px;
 }
 
+.storeName{
+  display:inline-block;
+}
 .allProducts{
   width: 90%;
   margin-left: 5%;
-}
-
-.storeName{
-  display:inline-block;
 }
 .navLinks{
   display:inline-block;
