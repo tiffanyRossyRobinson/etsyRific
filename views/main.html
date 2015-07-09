@@ -1,14 +1,3 @@
-<div class="allProducts">
-  <h3>Dare to be Etsy-fied...</h3> <input type="text" ng-model="search.title" name="name" placeholder="Filter By Title">
-  <button type="button" ng-click ="sortData('title', listings)" class="sortTitle">Sort By Title</button> <button type="button" ng-click ="sortData('price', listings)" class="sortPrice">Sort By Price</button>
-  <div class="product" ng-repeat="listing in listings | filter: search:strict" data-id={{listing.id}}>
-    <div class= "broughtUpImage"><img src="{{listing.image}}" width= "80"/></div>
-    <div class= "broughtUpDetails">
-        <a href="#/detail/{{listing.id}}">{{listing.title}}</a>
-        <p>Last Modified: {{listing.lastModDt}}</p>
-        <p class ="price"> {{listing.price}} {{listing.currency}}</p>
-        <a href="{{listing.link}}">Visit Etsy</a>
-        <button type="button" ng-controller = "CartController" ng-click="addToCart(listing)" class="addToCart">I'll Take it!</button>
-    </div>
-  </div>
+<div class="container">
+  <h1>Find Etsy-Rific Items!</h1>
 </div>

@@ -1,16 +1,28 @@
 body{
-  background-color: #F5F5F5;
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/e1/fb/ce/e1fbcee0e80d666ecaaa818583bdd309.jpg") center center no-repeat fixed;
+  background-size: cover;
+  font-family: fantasy;
+
 }
 .navigation{
-  background-color: pink;
+
+  background-color: #FFCCCC;
+  border: 2px solid #691F01;
   margin-top: 0;
-  width: 100%;
+  margin-left:5%;
+  width: 85%;
   height: 20%;
   border-radius: 20px;
+}
+form{
+  display:inline-block;
+  width: 58%;
 }
 
 .storeName{
   display:inline-block;
+  font-size: 50px;
+  border-radius: 20px;
 }
 .allProducts{
   width: 90%;
@@ -26,11 +38,15 @@ body{
   display: inline-block;
   list-style: none;
   margin-right: 5%;
+  height: 25px;
+  width: 55px;
+  padding-left: 3%;
+
 }
 ul{
   list-style: none;
 }
-.cartItemImage, .cartItemDetails, .broughtUpImage, .broughtUpDetails{
+.cartItemImage, .cartItemDetails{
   display:inline-block;
   margin-top: 5%;
 }
@@ -39,22 +55,101 @@ p{
   margin-bottom: 0;
 }
 
-.broughtUpDetails{
-  margin-top: 0;
-  margin-left: 2%;
-}
 a{
   text-decoration: none;
+  font-size: 20px;
   color: black;
 }
 a:hover{
-  color: #ff1493;
+  color: #FFCC11;
 }
 .cartTotal{
   text-align: right;
   width: 90%;
 }
+.options{
+  clear: both;
+  margin-top: 2%;
+  width: 90%;
+  margin-left: 2%;
+}
 
-img{
-  border: 1px solid black;
+.optionFont{
+  color: #E0B2FF;
+}
+.productBlock{
+  float:left;
+  width: 45%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: #FFCCCC;
+  border: 2px solid #691F01;
+  height: 180px;
+  border-radius: 10%;
+}
+.singleproduct, .myCart{
+  background-color: #FFCCCC;
+  border: 2px solid #691F01;
+  border-radius: 10%;
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 8%;
+}
+.singleImage{
+  margin-left: 35%;
+  width: 280px;
+  height: 280px;
+
+}
+.topDescription, .bottomDescription{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+.product{
+  margin-bottom: 5%;
+  padding-left: 0;
+  width: 90%;
+
+
+}
+.broughtUpImage{
+  width: 15%;
+  float: left;
+  padding-left: 1%;
+  padding-top: 2%;
+  margin-left: 1%;
+  margin-right: 2%;
+}
+.visitEtsy{
+  font-size: 15px;
+}
+.modified{
+  margin-top: 2%;
+}
+.listItemName{
+  text-decoration: underline;
+}
+.itemPicture{
+  width: 120px;
+  height: 120px;
+}
+.broughtUpDetails{
+  width: 70%;
+  margin-top: 0;
+  float: right;
+  overflow: scroll;
+  height: 150px;
+}
+.totalInCart{
+  width: 80%;
+  margin-left: 10%;
+}
+.cartItemDetails{
+  width: 75%;
+}
+.cartImage{
+  width: 150px;
+  height: 150px;
 }

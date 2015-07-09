@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body ng-app="etsy">
-    <div class="navigation">
+
+    <div class= "navigation">
       <ul class="navLinks">
-        <li><a href="/#/">Home</a></li>
+        <li><a  href="#/list">Home</a></li>
         <li><a href="#/myCart">Cart</a></li>
       </ul>
       <h1 class="storeName">Etsy-Rific!!</h1>
     </div>
+
     <ng-view></ng-view>
 
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
@@ -24,6 +26,14 @@
 <script src="js/app.js" charset="utf-8"></script>
 <script src="js/controllers.js" charset="utf-8"></script>
 <script src="js/services.js" charset="utf-8"></script>
+
+<script src="listings/listings.module.js" charset="utf-8"></script>
+<script src="listings/listings.controller.js" charset="utf-8"></script>
+<script src="listings/listings.service.js" charset="utf-8"></script>
+
+<script src="cart/cart.module.js" charset="utf-8"></script>
+<script src="cart/cart.controller.js" charset="utf-8"></script>
+<script src="cart/cart.service.js" charset="utf-8"></script>
 
   </body>
 </html>

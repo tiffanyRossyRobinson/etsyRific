@@ -6,19 +6,13 @@
       'ngRoute',
       'underscore',
       'moment',
+      'list',
+      'cart'
     ])
     .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
           templateUrl: 'views/main.html',
-          controller: 'MainController'
-        })
-        .when('/myCart', {
-          templateUrl: 'views/myCart.html',
-          controller: 'CartController'
-        })
-        .when('/detail/:productId', {
-          templateUrl: 'views/product.html',
           controller: 'MainController'
         })
         .when('/404', {

@@ -1,0 +1,20 @@
+<div class="myCart">
+  <h4 ng-controller = "CartController" class="totalInCart">Total Items: {{cartItems.length}}</h4>
+  <div class="shoppingCart" ng-repeat = "item in cartItems">
+    <ul>
+      <li class="cartItemImage"><img ng-src="{{item.image}}" class="cartImage" /></li>
+      <li class="cartItemDetails">
+        <ul class="itemInCart">
+          <li><a href="#/detail/{{item.id}}">{{item.title}}</a></li>
+          <li>{{item.price | currency}}</li>
+          <li><a href="{{item.link}}">Visit Etsy</a></li>
+          <li> <button type="button" name="button" ng-click="removeFromCart(item._id)">Delete</button></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div class="summary">
+    <h4 ng-controller="CartController" class="cartTotal">Cart Total: {{cartTotal(cartItems) | currency}}</h4>
+</div>
+</div>
