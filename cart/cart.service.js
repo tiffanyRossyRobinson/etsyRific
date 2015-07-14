@@ -5,6 +5,7 @@
     .factory('CartService', function ($http, $rootScope) {
           var urlCart = 'http://tiy-fee-rest.herokuapp.com/collections/etsyStore';
           var addToCart = function (listing) {
+            console.log("listing", listing);
             $http.post(urlCart, listing).success(function (response) {
               $rootScope.$broadcast('item:created');
               console.log(response);

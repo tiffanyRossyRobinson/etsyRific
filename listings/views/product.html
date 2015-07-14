@@ -1,15 +1,20 @@
-<div class="singleproduct" data-id={{aListing.id}}>
-  <div class="topDescription">
-      <h3>{{aListing.title}}</h3>
-      <p>Last Modified: {{aListing.lastModDt}}</p>
-  </div>
-  <img src="{{aListing.image}}" class="singleImage"/>
-  <div class="bottomDescription">
+<!-- <div class="container">
+  <single-item i= "alisting" data-id></single-item>
+</div> -->
 
-      <p class ="price"> <strong> Price: </strong>{{aListing.price}} {{aListing.currency}}</p>
-      <p class = "description"><strong>Description:</strong> {{aListing.description}} </p>
-      <p class = "materials"><strong>Materials:</strong> {{aListing.materials}} </p>
-      <a class="visitEtsy" href="{{aListing.link}}">Visit Etsy</a>
-      <button type="button" ng-controller="CartController" ng-click="addToCart(aListing)" class="addToCart">I'll Take it!</button>
-  </div>
+
+<div class="singleproduct" data-id={{aListing.id}}>
+<div class="topDescription">
+    <h3>{{aListing.title}}</h3>
+    <p>Last Modified: {{aListing.lastModDt}}</p>
+</div>
+<img src="{{aListing.image}}" class="singleImage"/>
+<div class="bottomDescription">
+
+    <p class ="price"> <strong> Price: </strong>{{aListing.price}} {{aListing.currency}}</p>
+    <p class = "description"><strong>Description:</strong> {{aListing.description}} </p>
+    <p class = "materials"><strong>Materials:</strong> {{aListing.materials}} </p>
+    <a class="visitEtsy" href="{{aListing.link}}">Visit Etsy</a>
+    <button type="button" ng-controller="CartController" ng-click="addToCart(aListing)" class="addToCart">I'll Take it!</button>
+</div>
 </div>

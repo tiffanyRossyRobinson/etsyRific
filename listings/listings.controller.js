@@ -3,7 +3,7 @@
 
   angular
     .module('list')
-    .controller('ListController', function ($scope, ListService, $routeParams, _) {
+    .controller('ListController', function ($scope, ListService, CartService, $routeParams, _) {
 
       ListService.getActiveListings().then(function (listings) {
         $scope.listings = listings;
@@ -12,6 +12,9 @@
       ListService.getListing($routeParams.productId).then(function (aListing) {
         $scope.aListing = aListing;
       });
+      $scope.addToCart = function (listing) {
+        CartService.addToCart(listing);
+      };
       $scope.sortData = function(sortWith, data ){
         if(sortWith === 'title'){
           $scope.listings = _.sortBy(data, function(obj, sortWith){

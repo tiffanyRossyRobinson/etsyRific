@@ -1,0 +1,10 @@
+<ul class= "product">
+      <li class= "broughtUpImage"><img src="{{i.image}}"  class="itemPicture"/></li>
+      <ul class= "broughtUpDetails">
+          <li><a class="listItemName" href="#/detail/{{i.id}}">{{i.title}}</a></li>
+          <li><p class="modified"><strong>Last Modified: </strong>{{i.lastModDt}}</p></li>
+          <li><p class ="price"><strong>Price: </strong> {{i.price}} {{i.currency}}</p></li>
+          <li><a class="visitEtsy" href="{{i.link}}">Visit Etsy</a></li>
+          <li><button type="button" ng-controller = "CartController" ng-click="action()" class="addToCart">I'll Take it!</button></li>
+      </ul>
+  </ul>

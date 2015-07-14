@@ -1,22 +1,9 @@
-<div class="allProducts">
+<div class="allProducts" >
   <div class= "options">
-
-      <!-- <form ng-submit="searchKeyword(keyword)"><span class="optionFont">Keyword:</span><input type="text" ng-model="keyword.val" name="name" val="" placeholder="Enter a keyword to search" size="40"></form> -->
-
        <span class="optionFont">Filter By: </span>  <input type="text" ng-model="search.title" name="name" placeholder="Filter By Title"><span class="optionFont"> or, </span>
       <button type="button" ng-click ="sortData('title', listings)" class="sortTitle">Sort By Title</button> <button type="button" ng-click ="sortData('price', listings)" class="sortPrice">Sort By Price</button>
   </div>
 
-  <div class="productBlock" ng-repeat="listing in listings | filter: search:strict" data-id={{listing.id}}>
-    <ul class= "product">
-        <li class= "broughtUpImage"><img src="{{listing.image}}"  class="itemPicture"/></li>
-        <ul class= "broughtUpDetails">
-            <li><a class="listItemName" href="#/detail/{{listing.id}}">{{listing.title}}</a></li>
-            <li><p class="modified"><strong>Last Modified: </strong>{{listing.lastModDt}}</p></li>
-            <li><p class ="price"><strong>Price: </strong> {{listing.price}} {{listing.currency}}</p></li>
-            <li><a class="visitEtsy" href="{{listing.link}}">Visit Etsy</a></li>
-            <li><button type="button" ng-controller = "CartController" ng-click="addToCart(listing)" class="addToCart">I'll Take it!</button></li>
-        </ul>
-    </ul>
-  </div>
+<single class= "productBlock" ng-repeat="listing in listings | filter: search:strict" i = "listing" action="addToCart(listing)"></single>
+
 </div>

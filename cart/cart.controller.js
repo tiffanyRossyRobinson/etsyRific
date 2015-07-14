@@ -18,6 +18,7 @@
       }
 
       $scope.addToCart = function (itemToCart) {
+            console.log("in add to cart");
             CartService.addToCart(itemToCart);
       };
 
